@@ -1,4 +1,6 @@
-REM Author: Ava Gailliot
+REM. Author: Ava Gailliot
+
+@ECHO OFF
 
 set directory="C:\Users\myuser\pictures"
 set email=myemail@gmail.com
