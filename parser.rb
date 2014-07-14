@@ -9,7 +9,7 @@ IO.foreach("yahoo-disclosure.txt") do |line|
     pass = line.split(":")[2]
     email = line.split(":")[1]
     begin
-        #uri = URI.parse("http://#{user}.imgur.com")
+        uri = URI.parse("http://#{user}.imgur.com")
         res = Net::HTTP.get_response(uri)
     rescue URI::InvalidURIError => err
         next
