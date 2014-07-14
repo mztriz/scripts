@@ -1,4 +1,9 @@
-REM. Author: Ava Gailliot
+GOTO COMMENT
+    Author: Ava Gailliot
+    Attach all files in directory one at a time to outlook e-mail  
+    Send large files via e-mail one at a time.
+    
+:COMMENT
 
 @ECHO OFF
 
