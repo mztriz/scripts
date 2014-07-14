@@ -18,4 +18,4 @@ do
         echo "Account ID and OS access group: $(id $user)"
         echo "Last login: $(lastlog -u "$user" | awk '{print $5,$6,$9}')"
 done
-echo | mutt -a users.txt -s "Users Audit for $HOSTNAME" $email
+#echo | mutt -a users.txt -s "Users Audit for $HOSTNAME" $email
