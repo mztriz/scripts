@@ -1,3 +1,5 @@
+REM Author: Ava Gailliot
+
 set directory="C:\Users\myuser\pictures"
 set email=myemail@gmail.com
 
