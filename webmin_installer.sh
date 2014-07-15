@@ -32,3 +32,5 @@ yum -y install rrdtool
 
 #This may or may not install
 yum -y install perl-rrdtool
+
+wget http://downloads.sourceforge.net/project/webminstats/Sysstats/2.7/sysstats-2.7.tgz?r=&ts=1405432426&use_mirror=iweb
