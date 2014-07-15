@@ -1,4 +1,4 @@
 scripts
 =======
 
-Collection of scripts I created
+A small collection of some of scripts I've created for admin tasks over the years
