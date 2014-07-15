@@ -6,9 +6,11 @@ GOTO COMMENT
 @ECHO OFF
 setlocal enabledelayedexpansion
 
+set SERVERS=c:\path\to\servers.txt
 set OUTPUT_FILE=results.txt
+
 >nul copy nul %OUTPUT_FILE%
-for /f %%i in (servers.txt) do (
+for /f %%i in ( %SERVERS% ) do (
     set SERVER_ADDRESS=ADDRESS N/A
     for /f "tokens=1,2,3" %%x in ('ping -n 1 %%i ^&^& echo SERVER_IS_UP') do (
         if %%x==Pinging set SERVER_ADDRESS=%%y
