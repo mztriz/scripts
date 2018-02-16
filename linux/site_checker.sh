@@ -17,7 +17,7 @@ hen/tips-safe" "http://www.mydomain.org/news/news-releases/1990/04/08/ten-most-
 dangerous-places" "http://www.mydomain.org/successes/2011/new-approach-assess
 ing-chemical-risks" "http://www.mydomain.org/flame-retardants-found-farmed-fishies" "http://www.google.com/404")
 
-# Checks if the stie returns a 200 response code
+# Checks if the site returns a 200 response code
 is_ok(){
     for page in "${urls[@]}"
     do
